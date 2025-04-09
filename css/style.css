@@ -164,3 +164,19 @@ a:hover {
     margin: 0 auto;
   }
 }
+
+.btn {
+  display: inline-block;
+  margin-top: 1em;
+  background-color: #003366;
+  color: white;
+  padding: 0.6em 1em;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0055aa;
+}
