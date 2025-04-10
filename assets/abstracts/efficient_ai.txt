@@ -1,17 +1,1 @@
-The fault diagnostic model trained for a laboratory
-case machine fails to perform well on the industrial machines
-running under variable operating conditions. For every new operating condition of such machines, a new diagnostic model has to
-be trained which is a time-consuming and uneconomical process.
-Therefore, we propose a quick learning mechanism that can transform the existing diagnostic model into a new model suitable for industrial machines operating in different conditions. The proposed
-method uses the Net2Net transformation followed by a fine-tuning
-to cancel/minimize the maximum mean discrepancy between the
-new data and the previous one. The fine-tuning of the model
-requires a very less amount of labeled target samples and very few
-iterations of training. Therefore, the proposed method is capable
-of learning the new target data pattern quickly. The effectiveness
-of the proposed fault diagnosis method has been demonstrated on
-the Case Western Reserve University dataset, Intelligent Maintenance Systems bearing dataset, and Paderborn university dataset
-under the wide variations of the operating conditions. It has been
-validated that the diagnostic model trained on artificially damaged
-fault datasets can be used to quickly train another model for a real
-damage dataset
+The fault diagnostic model trained for a laboratory case machine fails to perform well on the industrial machines running under variable operating conditions. For every new operating condition of such machines, a new diagnostic model has to be trained which is a time-consuming and uneconomical process. Therefore, we propose a quick learning mechanism that can transform the existing diagnostic model into a new model suitable for industrial machines operating in different conditions. The proposed method uses the Net2Net transformation followed by a fine-tuning to cancel/minimize the maximum mean discrepancy between the new data and the previous one. The fine-tuning of the model requires a very less amount of labeled target samples and very few iterations of training. Therefore, the proposed method is capable of learning the new target data pattern quickly. The effectiveness of the proposed fault diagnosis method has been demonstrated on the Case Western Reserve University dataset, Intelligent Maintenance Systems bearing dataset, and Paderborn university dataset under the wide variations of the operating conditions. It has been validated that the diagnostic model trained on artificially damaged fault datasets can be used to quickly train another model for a real damage dataset
