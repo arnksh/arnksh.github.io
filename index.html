@@ -29,12 +29,35 @@
       <img src="assets/profile.jpg" alt="Dr. Arun Sharma"/>
       <div class="bio">
         <h2>Postdoctoral Researcher – SMSS Lab, IIT Kanpur</h2>
-        <p>Ph.D. in Electrical Engineering from IIT Kanpur with a focus on Deep Learning Architecture Optimization and its application to classification problems. Passionate about real-time AI, intelligent system design, and interdisciplinary AI applications in engineering.</p>
+        <p>PhD in Electrical Engineering from Indian Institute of Technology, Kanpur with research focus on focused on algorithmic development for efficient AI models and their applications to modern industrial intelligent systems. B.Tech. in Electrical Engineering from BIT Sindri Dhanbad. M.Tech. in Instrumentation from Indian Institute of Technology, Kharagpur. Passionate about real-time AI, intelligent system design, and interdisciplinary AI applications in engineering.</p>
         <a href="assets/Dr_Arun_Sharma_Resume.pdf" class="btn" target="_blank">📄 Download Full Resume</a>
       </div>
     </div>
   </section>
   
+  <div class="ai-focus-grid">
+    <div class="ai-focus-card" onclick="loadAbstract('efficient_ai.txt')">
+      <img src="assets/efficient_ai.png" alt="Efficient AI" class="ai-focus-img">
+      <p>Efficient Computation in AI</p>
+    </div>
+    <div class="ai-focus-card" onclick="loadAbstract('medical_vision.txt')">
+      <img src="assets/medical_vision.png" alt="Medical Vision" class="ai-focus-img">
+      <p>Computer Vision for Medical Imaging</p>
+    </div>
+    <div class="ai-focus-card" onclick="loadAbstract('engineering_design.txt')">
+      <img src="assets/engineering_design.png" alt="Engineering Design" class="ai-focus-img">
+      <p>AI in Engineering Design</p>
+    </div>
+    <div class="ai-focus-card" onclick="loadAbstract('guided_sampling.txt')">
+      <img src="assets/guided_sampling.png" alt="Guided Sampling" class="ai-focus-img">
+      <p>PG-Gradient for Guided Sampling</p>
+    </div>
+  </div>
+  
+  <div id="abstract-viewer" class="abstract-box" style="display:none;">
+    <h3>Abstract</h3>
+    <pre id="abstract-content">Loading...</pre>
+  </div>
 
   <section id="research" data-aos="fade-up">
     <h2>Research Statement</h2>
@@ -47,10 +70,6 @@
           <li><strong>Short-Term:</strong> AI-driven bioinformatics for diagnostics and soft-robotics for adaptive medical applications.</li>
           <li><strong>Long-Term:</strong> Autonomous AI-enabled soft robotic systems for surgical and rehabilitation applications using bio-inspired reinforcement learning models.</li>
         </ul>
-      </div>
-      <div class="graphic">
-        <img src="assets/robotics-animation.gif" alt="AI Robotics" />
-        <p class="caption">Soft robotic systems with embedded AI – future of medical tech</p>
       </div>
     </div>
   </section>
@@ -122,5 +141,27 @@
   <script>
     AOS.init();
   </script>
+  <script>
+    function loadAbstract(fileName) {
+      const viewer = document.getElementById("abstract-viewer");
+      const content = document.getElementById("abstract-content");
+      viewer.style.display = "block";
+      content.textContent = "Loading...";
+
+      fetch(`assets/abstracts/${fileName}`)
+        .then(response => {
+          if (!response.ok) throw new Error("File not found");
+          return response.text();
+        })
+        .then(text => {
+          content.textContent = text;
+        })
+        .catch(() => {
+          content.textContent = "Failed to load abstract.";
+        });
+    }
+  </script>
 </body>
 </html>
+
+
