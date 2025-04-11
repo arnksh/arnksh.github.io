@@ -14,6 +14,7 @@
     <div class="container header-flex">
       <div class="site-name">Dr. Arun Kumar Sharma</div>
       <nav class="nav-menu">
+        <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#experience">Experience</a>
@@ -38,7 +39,7 @@
 
     <!-- Main Content -->
     <main class="main-content">
-      <section class="about">
+      <section id="about">
         <h2>About</h2>
         <p>
           I received my B.Sc. Engg. in Electrical Engineering in 2009 from BIT Sindri Dhanbad, M.Tech. in Instrumentation in 2011 from Indian Institute of Technology, Kharagpur, and PhD in PhD in Electrical Engineering from Indian Institute of Technology, Kanpur in 2024 with research focus on focused on algorithmic development for efficient AI models and their applications to modern industrial intelligent systems.
@@ -47,7 +48,7 @@
       </section>
       
       <!-- Research Highlights -->
-      <section class="highlights">
+      <div class="highlights">
         <div class="highlight-card" onclick="loadAbstract('efficient_ai.txt')"> 
           <img src="assets/efficient_ai.png" alt="Efficient AI" />
           <p>Efficient Training of DL Model</p>
@@ -64,7 +65,7 @@
           <img src="assets/engineering_design.png" alt="Engineering Design" />
           <p>AI in Engineering Design (Inverse Design of Metastructure)</p>
         </div>
-      </section>
+      </div>
 
       <div id="abstract-viewer" class="abstract-box" style="display:none;">
         <h3>Abstract</h3>
