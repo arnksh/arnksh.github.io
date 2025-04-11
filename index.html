@@ -2,193 +2,174 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dr. Arun Kumar Sharma – Research Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Arun Kumar Sharma</title>
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
 </head>
 <body>
-
-  <header>
-    <nav>
-      <h1>Dr. Arun Kumar Sharma</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="https://github.com/arnksh" target="_blank"><i class="fab fa-github"></i></a></li>
-      </ul>
-    </nav>
+  <!-- Top Header -->
+  <header class="top-header">
+    <div class="container header-flex">
+      <div class="site-name">Dr. Arun Kumar Sharma</div>
+      <nav class="nav-menu">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="home" data-aos="fade-up">
-    <div class="container profile">
-      <img src="assets/profile.jpg" alt="Dr. Arun Sharma"/>
-      <div class="bio">
-        <h2>Postdoctoral Researcher – SMSS Lab, IIT Kanpur</h2>
-        <p>PhD in Electrical Engineering from Indian Institute of Technology, Kanpur with research focus on focused on algorithmic development for efficient AI models and their applications to modern industrial intelligent systems. B.Tech. in Electrical Engineering from BIT Sindri Dhanbad. M.Tech. in Instrumentation from Indian Institute of Technology, Kharagpur. Passionate about real-time AI, intelligent system design, and interdisciplinary AI applications in engineering.</p>
-        <a href="assets/Dr_Arun_Sharma_Resume.pdf" class="btn" target="_blank">📄 Download Full Resume</a>
-      </div>
-    </div>
-  </section>
-  
-  <div class="ai-focus-grid">
-    <div class="ai-focus-card" onclick="loadAbstract('efficient_ai.txt')">
-      <img src="assets/efficient_ai.png" alt="Efficient AI" class="ai-focus-img">
-      <p>Efficient Computation in AI</p>
-    </div>
-    <div class="ai-focus-card" onclick="loadAbstract('medical_vision.txt')">
-      <img src="assets/medical_vision.png" alt="Medical Vision" class="ai-focus-img">
-      <p>Computer Vision for Medical Imaging</p>
-    </div>
-    <div class="ai-focus-card" onclick="loadAbstract('engineering_design.txt')">
-      <img src="assets/engineering_design.png" alt="Engineering Design" class="ai-focus-img">
-      <p>AI in Engineering Design</p>
-    </div>
-    <div class="ai-focus-card" onclick="loadAbstract('guided_sampling.txt')">
-      <img src="assets/guided_sampling.png" alt="Guided Sampling" class="ai-focus-img">
-      <p>PG-Gradient for Guided Sampling</p>
-    </div>
-  </div>
-  
-  <div id="abstract-viewer" class="abstract-box" style="display:none;">
-    <h3>Abstract</h3>
-    <pre id="abstract-content">Loading...</pre>
-  </div>
+  <div class="page-body">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img src="assets/profile.jpg" alt="Profile Picture" class="profile-img" />
+      <h3>Dr. Arun K Sharma</h2>
+      <p>Postdoc., SMSS Lab, IIT Kanpur</p>
+      <p>Ph.D., EE, IIT Kanpur</p>
+      <p>Email: <a href="mailto:arunshr.iitk@gmail.com">arunshr.iitk@gmail.com</a></p>
+      <p><a href="https://scholar.google.co.in/citations?user=Lye6naYAAAAJ&hl=en">Google Scholar</a> | <a href="https://www.linkedin.com/in/arun-sharma-3684b112a">LinkedIn</a></p>
+      <p>GitHub: <a href="https://github.com/arnksh" target="_blank">@arnksh</a></p>
+      <p>ORCID: <a href="https://orcid.org/0000-0003-2270-4714" target="_blank">0000-0003-2270-4714</a></p>
+      <a href="assets/Dr_Arun_Sharma_Resume.pdf" class="resume-button" target="_blank" download> Full Resume </a>  
+    </aside>
 
-  <section id="research" data-aos="fade-up">
-    <h2>Research Statement</h2>
-    <p>Deep learning algorithms have shown outstanding performance for system identification, fault diagnosis, classification, feature extraction, etc. However, the performance of most of the deep learning methodologies is greatly affected by the selection of suitable optimization techniques, model architecture, and model hyper-parameters. My Ph.D. research has attempted to develop efficient methods of model selection with a novel fitness evaluation strategy for improved performance in real-time scenarios. Fast model evaluation is one of the key requirements of model selection algorithms. Therefore, methods for fast model evaluation strategies are developed to reduce training time and the requirements of computational resources.</p>
-  
-    <h3>Ph.D. Research Highlights</h3>
-    <ul>
-      <li>Developed an improved and faster parameter optimization in parallel computational framework for <strong>"Aerodynamic Modelling of ATTAS Aircraft using Mamdani Fuzzy Inference Network"</strong>.</li>
-      <li>Developed a <strong>Quick Learning Mechanism with Cross-Domain Adaptation</strong> for Intelligent Fault Diagnosis — enabling fast model evaluation required for model selection.</li>
-      <li>Proposed <strong>EvoN2N: Transfer Learning based Evolutionary Deep Neural Network</strong> for architecture optimization in Intelligent Fault Diagnosis.</li>
-      <li>Extended EvoN2N to a guided evolutionary algorithm: <strong>Guided Sampling-based Evolutionary Deep Neural Network</strong>.</li>
-      <li>Introduced <strong>A Novel Vision Transformer with Residual in Self-attention</strong> for Biomedical Image Classification.</li>
-    </ul>
-  
-    <h3>My Contributions while working with startup (Avermass GmbH, Germany) Remotely</h3>
-    <ul>
-      <li><strong>Face Forgery Detection:</strong> Cascaded Twin models (ViT and YOLOv7) achieved 95% accuracy in forgery detection.</li>
-      <li><strong>Image Data Synthesis:</strong> Implemented DCGAN and CycleGAN for generating synthetic face data and image-to-image translation.</li>
-      <li><strong>End2End Image Forgery Detection:</strong> Combined ViT and YOLOv7 for fake news detection in forged images.</li>
-    </ul>
-  
-    <h3>Postdoctoral Research at SMSS Lab, IIT Kanpur</h3>
-    <ul>
-      <li><strong>AI-driven Inverse Design of Band-Tunable Mechanical Metastructures</strong> for Tailored Vibration Mitigation. <a href="https://arxiv.org/abs/2412.12122" target="_blank">arXiv:2412.12122</a></li>
-      <li><strong>Cross-Spectral Vision Transformer</strong> for Biometric Authentication using Subcutaneous Vein and Periocular Pattern. <a href="https://arxiv.org/abs/2412.19160" target="_blank">arXiv:2412.19160</a></li>
-      <li><strong>Multi-Dynamics Attention-Based Regression Model</strong> for Deflection Angle Prediction in SMA-Powered Metamaterial-Based Elbow Joints.</li>
-    </ul>
-    <h3>Future Research Plans</h3>
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="about">
+        <h2>About</h2>
+        <p>
+          I received my B.Sc. Engg. in Electrical Engineering in 2009 from BIT Sindri Dhanbad, M.Tech. in Instrumentation in 2011 from Indian Institute of Technology, Kharagpur, and PhD in PhD in Electrical Engineering from Indian Institute of Technology, Kanpur in 2024 with research focus on focused on algorithmic development for efficient AI models and their applications to modern industrial intelligent systems.
+          I am currently working as post-doctoral researcher at SMSS Lab, IIT Kanpur with research focus on algorithmic development of AI for engineering structural design interdisciplinary robotic applications. I am passionate about algorithmic development of AI for intelligent autonomous systems.
+        </p>      
+      </section>
+      
+      <!-- Research Highlights -->
+      <section class="highlights">
+        <div class="highlight-card" onclick="loadAbstract('efficient_ai.txt')"> 
+          <img src="assets/efficient_ai.png" alt="Efficient AI" />
+          <p>Efficient Training of DL Model</p>
+        </div>
+        <div class="highlight-card" onclick="loadAbstract('guided_sampling.txt')">
+          <img src="assets/guided_sampling.png" alt="Guided Sampling" />
+          <p>PG-Gradient-based Guided sampling for Network Architecture Search</p>
+        </div>
+        <div class="highlight-card" onclick="loadAbstract('medical_vision.txt')">
+          <img src="assets/medical_vision.png" alt="Medical Vision" />
+          <p>Computer Vision for Medical Imaging Classification</p>
+        </div>
+        <div class="highlight-card" onclick="loadAbstract('engineering_design.txt')">
+          <img src="assets/engineering_design.png" alt="Engineering Design" />
+          <p>AI in Engineering Design (Inverse Design of Metastructure)</p>
+        </div>
+      </section>
+
+      <div id="abstract-viewer" class="abstract-box" style="display:none;">
+        <h3>Abstract</h3>
+        <pre id="abstract-content">Loading...</pre>
+      </div>
+
+      <!-- Research Section -->
+      <section id="research">
+        <h2>Research Highlights</h2>
+        <p>Deep learning algorithms have shown outstanding performance for system identification, fault diagnosis, classification, feature extraction, etc. However, the performance of most of the deep learning methodologies is greatly affected by the selection of suitable optimization techniques, model architecture, and model hyper-parameters. My Ph.D. research has attempted to develop efficient methods of model selection with a novel fitness evaluation strategy for improved performance in real-time scenarios. Fast model evaluation is one of the key requirements of model selection algorithms. Therefore, methods for fast model evaluation strategies are developed to reduce training time and the requirements of computational resources. </p>
+      
+        <h3>Ph.D. Research Highlights</h3>
         <ul>
-          <li><strong>Short-Term:</strong> (1) Efficient and sustanable AI for engineering application. (2) AI-driven bioinformatics for diagnostics and soft-robotics for adaptive medical applications.</li>
-          <li><strong>Long-Term:</strong> Autonomous AI-enabled soft robotic systems for surgical and rehabilitation applications using bio-inspired reinforcement learning models.</li>
+          <li>Developed an improved and faster parameter optimization in parallel computational framework for <em>"Aerodynamic Modelling of ATTAS Aircraft using Mamdani Fuzzy Inference Network"</em>.</li>
+          <li>Developed a <em>Quick Learning Mechanism with Cross-Domain Adaptation</em> for Intelligent Fault Diagnosis — enabling fast model evaluation required for model selection.</li>
+          <li>Proposed <em>EvoN2N: Transfer Learning based Evolutionary Deep Neural Network</em> for architecture optimization in Intelligent Fault Diagnosis.</li>
+          <li>Extended EvoN2N to a guided evolutionary algorithm: <em>Guided Sampling-based Evolutionary Deep Neural Network</em>.</li>
+          <li>Introduced <em>A Novel Vision Transformer with Residual in Self-attention</em> for Biomedical Image Classification.</li>
         </ul>
-  </section>
+      
+        <h3>Research highlights while partly associated with Avermass GmbH, Germany (Remote)</h3>
+        <ul>
+          <li><strong>Face Forgery Detection:</strong> Cascaded Twin models (ViT and YOLOv7) achieved 95% accuracy in forgery detection.</li>
+          <li><strong>Image Data Synthesis:</strong> Implemented DCGAN and CycleGAN for generating synthetic face data and image-to-image translation.</li>
+          <li><strong>End2End Image Forgery Detection:</strong> Combined ViT and YOLOv7 for fake news detection in forged images.</li>
+        </ul>
+      
+        <h3>Postdoctoral Research at SMSS Lab, IIT Kanpur</h3>
+        <ul>
+          <li><strong>AI-driven Inverse Design of Band-Tunable Mechanical Metastructures</strong> for Tailored Vibration Mitigation. <a href="https://arxiv.org/abs/2412.12122" target="_blank">arXiv:2412.12122</a></li>
+          <li><strong>Cross-Spectral Vision Transformer</strong> for Biometric Authentication using Subcutaneous Vein and Periocular Pattern. <a href="https://arxiv.org/abs/2412.19160" target="_blank">arXiv:2412.19160</a></li>
+          <li><strong>Multi-Dynamics Attention-Based Regression Model</strong> for Deflection Angle Prediction in SMA-Powered Metamaterial-Based Elbow Joints.</li>
+        </ul>
+        <h3>Future Research Plans</h3>
+            <ul>
+              <li><strong>Short-Term:</strong> 1. Efficient and sustanable AI for engineering application. 2. AI-driven bioinformatics for diagnostics and soft-robotics for adaptive medical applications.</li>
+              <li><strong>Long-Term:</strong> Autonomous AI-enabled soft robotic systems for surgical and rehabilitation applications using bio-inspired reinforcement learning models.</li>
+            </ul>
+      </section>  
 
-  <section id="publications" data-aos="fade-up">
-    <h2>Publications</h2>
+      <!-- Publications Section -->
+      <section id="publications">
+        <h2>Publications</h2>
+        <h3>1. Journal Publications</h3>
+          <ol>
+            <li><strong>Arun K. Sharma</strong> and Nishchal K. Verma. “Guided Sampling-based Evolutionary Deep Neural Network for Intelligent Fault Diagnosis.” <em>Engineering Applications of Artificial Intelligence</em>, Volume 128, 2024. <a href="https://doi.org/10.1016/j.engappai.2023.107498" target="_blank">DOI</a> | <a href="assets/2024 Guided sampling-based EvoDNN.pdf" target="_blank">Download PDF</a></li>
+            <li><strong>Arun K. Sharma</strong> and Nishchal K. Verma. “Quick Learning Mechanism with Cross-Domain Adaptation for Intelligent Fault Diagnosis.” <em>IEEE Transactions on Artificial Intelligence</em>, Volume 3, Issue 3, June 2022. <a href="https://doi.org/10.1109/TAI.2021.3123935" target="_blank">DOI</a> | <a href="assets/2022 Quick Learning Mechanism.pdf" target="_blank">Download PDF</a></li>
+            <li><strong>Arun K. Sharma</strong>, Dhan Jeet Singh, V. Singh, N. K. Verma. “Aerodynamic Modelling of ATTAS Aircraft using Mamdani Fuzzy Inference Network.” <em>IEEE Transactions on Aerospace and Electronic Systems</em>, Volume 56, Issue 5, October 2020. <a href="https://doi.org/10.1109/TAES.2020.2975447" target="=_blank">DOI</a> | <a href="assets/2020 Aerodynamic Modelling.pdf" target="_blank">Download PDF</a></li>
+            <li>A. Dwivedi, G. Ray, <strong>Arun K. Sharma</strong>. “Genetic Algorithm Based Decentralized PI Type Controller: Load Frequency Control.” <em>Journal of The Institution of Engineers (India): Series B</em>, May 2015. <a href="https://doi.org/10.1007/s40031-015-0191-7" target="_blank">DOI</a> | <a href="assets/GA_based_decPICont.pdf" target="_blank">Download PDF</a></li>
+            <li><strong>Arun K. Sharma</strong>, G. Ray. “Robust Controller with State-Parameter Estimation Algorithm for Uncertain Networked Control System.” <em>IET Control Theory & Applications</em>, Volume 6, Issue 18, December 2012. <a href="https://digital-library.theiet.org/doi/abs/10.1049/iet-cta.2011.0262" target="_blank">DOI</a> | <a href="assets/2011 Robust controller for NCS.pdf" target="_blank">Download PDF</a></li>
+          </ol>
   
-    <h3>1. Journal Publications</h3>
-<ol>
-  <li><strong>Arun K. Sharma</strong> and Nishchal K. Verma. “Guided Sampling-based Evolutionary Deep Neural Network for Intelligent Fault Diagnosis.” <em>Engineering Applications of Artificial Intelligence</em>, Volume 128, 2024. <a href="https://doi.org/10.1016/j.engappai.2023.107498" target="_blank">DOI</a> | <a href="assets/2024 Guided sampling-based EvoDNN.pdf" target="_blank">Download PDF</a></li>
+        <h3>2. Conference Publications</h3>
+          <ol>
+            <li><strong>Arun K. Sharma</strong>, Dhanjeet Singh, and Nishchal K. Verma. “Data Driven Aerodynamic Modeling Using Mamdani Fuzzy Inference Systems.” <em>2018 International Conference on Sensing, Diagnostics, Prognostics, and Control</em>, Xi’an, China.</li>
+            <li><strong>Arun K. Sharma</strong>, Vikas Singh, Nishchal K. Verma, Jie Liu. “Condition Based Monitoring of Machine using Mamdani Fuzzy Network.” <em>2018 Prognostics and System Health Management Conference</em>, PHM-Chongqing, China.</li>
+            <li><strong>Arun K. Sharma</strong>, S. Pandey. “Automatic Generation Control of Interconnected Power System using Internal & Variable System Controller.” <em>2nd National Conference on Advancement of Electronics & Communication Technology and Engineering</em>, Greater Noida, 2012.</li>
+            <li><strong>Arun K. Sharma</strong>. “Adaptive Algorithm for State and Parameter Estimation in a system with Parametric Uncertainties.” <em>National Conference on Advances in Electrical Power and Energy Systems</em>, AKGEC, Ghaziabad, 2013.</li>
+          </ol>
+      
+        <h3>3. Preprints</h3>
+          <ol>
+            <li><strong>Arun K. Sharma</strong>, Shubhobrata Bhattacharya, Motahar Reza. “Dual Channel Multi-Attention in ViT for Biometric Authentication.” <em>arXiv preprint</em>, <a href="https://arxiv.org/abs/2412.19160" target="_blank">arXiv:2412.19160</a>.</li>
+            <li>Tanuj Gupta, <strong>Arun K. Sharma</strong>, et al. “Inverse Design of Potential Metastructures Inspired from Indian Medieval Architectural Elements.” <em>arXiv preprint</em>, <a href="https://arxiv.org/abs/2412.12122" target="_blank">arXiv:2412.12122</a>.</li>
+            <li><strong>Arun K. Sharma</strong>, Nishchal K. Verma. “A Novel Vision Transformer with Residual in Self-attention for Biomedical Image Classification.” <em>arXiv preprint</em>, <a href="https://arxiv.org/abs/2306.01594" target="_blank">arXiv:2306.01594</a>.</li>
+            <li><strong>Arun K. Sharma</strong>, Nishchal K. Verma. “Knowledge Transfer based Evolutionary Deep Neural Network for Intelligent Fault Diagnosis.” <em>arXiv preprint</em>, <a href="https://arxiv.org/abs/2109.13479" target="_blank">arXiv:2109.13479</a>.</li>
+          </ol>
+      </section>
 
-  <li><strong>Arun K. Sharma</strong> and Nishchal K. Verma. “Quick Learning Mechanism with Cross-Domain Adaptation for Intelligent Fault Diagnosis.” <em>IEEE Transactions on Artificial Intelligence</em>, Volume 3, Issue 3, June 2022. <a href="assets/2022 Quick Learning Mechanism.pdf" target="_blank">Download PDF</a></li>
+      <!-- Experience Section -->
+    <section id="experience">
+      <h2>Experiences</h2>
+        <ul>
+          <li><strong>Postdoctoral Researcher</strong>, SMSS Lab, IIT Kanpur (Sept. 2024–Present)<br>Working on AI for engineering design, including inverse design and intelligent actuators.</li>
+          <li><strong>Lead AI Scientist (Remote, Partly)</strong>, Avermass GmbH, German startup (June 2022–May 2023)<br>Led ML/DL research team for on forgery detection, synthetic data generation, and Document AI.</li>
+          <li><strong>Assistant Professor</strong>, IIMT College of Engineering, Greater Noida (July 2011–July 2013)<br>Taught core subjects in Electrical and Instrumentation Engineering.</li>
+          <li><strong>Assistant Professor</strong>, AKGEC, Ghaziabad (July 2013–Nov. 2017)<br>Taught core subjects in Electrical and Electronic Engineering. Led student projects on AI, ML applications, and lab development.</li>
+          <li><strong>Teaching Assistant</strong>, IIT Kanpur (During PhD)<br>Involved in teaching Control Systems, Electrical Machines, AI/ML, and related labs.</li>
+        </ul>
+      <h3>Total: Inds. startup = 01 year, Teaching = 6.5 year, Post-Doc = 08 months</h2>
+      <h2>Subjects Taught</h3>
+        <ul>
+          <li>Control Systems & Applications</li>
+          <li>Electrical Machines & Power Systems</li>
+          <li>Measurement & Instrumentation</li>
+          <li>Artificial Intelligence and Machine Learning</li>
+          <li>Sensor and Transducer Systems</li>
+          <li>LabVIEW-based Instrumentation</li>
+        </ul>
+    </section>
 
-  <li><strong>Arun K. Sharma</strong>, Dhan Jeet Singh, V. Singh, N. K. Verma. “Aerodynamic Modelling of ATTAS Aircraft using Mamdani Fuzzy Inference Network.” <em>IEEE Transactions on Aerospace and Electronic Systems</em>, Volume 56, Issue 5, October 2020. <a href="assets/2020 Aerodynamic Modelling.pdf" target="_blank">Download PDF</a></li>
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>If you have any questions or would like to get in touch, please feel free to reach out!</p>
+        <p><strong>Address:</strong> Dr. Arun Kumar Sharma, 102, NL-1, SMSS Lab, IIT Kanpur, India</p>
+        <p><strong>Email:</strong> arunshr.iitk@gmail.com</p>
+        <p><strong>Phone:</strong> +91 84700 35605</p>
+      </section>
 
-  <li>A. Dwivedi, G. Ray, <strong>Arun K. Sharma</strong>. “Genetic Algorithm Based Decentralized PI Type Controller: Load Frequency Control.” <em>Journal of The Institution of Engineers (India): Series B</em>, May 2015. <a href="assets/GA_based_decPICont.pdf" target="_blank">Download PDF</a></li>
-
-  <li><strong>Arun K. Sharma</strong>, G. Ray. “Robust Controller with State-Parameter Estimation Algorithm for Uncertain Networked Control System.” <em>IET Control Theory & Applications</em>, Volume 6, Issue 18, December 2012. <a href="assets/2011 Robust controller for NCS.pdf" target="_blank">Download PDF</a></li>
-</ol>
-  
-    <h3>2. Conference Publications</h3>
-    <ol>
-      <li> <strong>Arun K. Sharma</strong>, Dhanjeet Singh, and Nishchal K. Verma. “Data Driven Aerodynamic Modeling Using Mamdani Fuzzy Inference Systems.” <em>2018 International Conference on Sensing, Diagnostics, Prognostics, and Control</em>, Xi’an, China.</li>
-      <li><strong>Arun K. Sharma</strong>, Vikas Singh, Nishchal K. Verma, Jie Liu. “Condition Based Monitoring of Machine using Mamdani Fuzzy Network.” <em>2018 Prognostics and System Health Management Conference</em>, PHM-Chongqing, China.</li>
-      <li><strong>Arun K. Sharma</strong>, S. Pandey. “Automatic Generation Control of Interconnected Power System using Internal & Variable System Controller.” <em>2nd National Conference on Advancement of Electronics & Communication Technology and Engineering</em>, Greater Noida, 2012.</li>
-      <li><strong>Arun K. Sharma</strong>. “Adaptive Algorithm for State and Parameter Estimation in a system with Parametric Uncertainties.” <em>National Conference on Advances in Electrical Power and Energy Systems</em>, AKGEC, Ghaziabad, 2013.</li>
-    </ol>
-  
-    <h3>3. Preprints</h3>
-    <ol>
-      <li><strong>Arun K. Sharma</strong>, Shubhobrata Bhattacharya, Motahar Reza. “Dual Channel Multi-Attention in ViT for Biometric Authentication.” <em>arXiv preprint</em>, <a href="https://arxiv.org/abs/2412.19160" target="_blank">arXiv:2412.19160</a>.</li>
-      <li>Bishakh Bhattacharya, Tanuj Gupta, <strong>Arun K. Sharma</strong>, et al. “Inverse Design of Potential Metastructures Inspired from Indian Medieval Architectural Elements.” <em>arXiv preprint</em>, <a href="https://arxiv.org/abs/2412.12122" target="_blank">arXiv:2412.12122</a>.</li>
-      <li><strong>Arun K. Sharma</strong>, Nishchal K. Verma. “A Novel Vision Transformer with Residual in Self-attention for Biomedical Image Classification.” <em>arXiv preprint</em>, <a href="https://arxiv.org/abs/2306.01594" target="_blank">arXiv:2306.01594</a>.</li>
-      <li><strong>Arun K. Sharma</strong>, Nishchal K. Verma. “Knowledge Transfer based Evolutionary Deep Neural Network for Intelligent Fault Diagnosis.” <em>arXiv preprint</em>, <a href="https://arxiv.org/abs/2109.13479" target="_blank">arXiv:2109.13479</a>.</li>
-    </ol>
-    <p>For full list of publications, visit my <a href="https://scholar.google.com/citations?user=Lye6naYAAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
-  </section>
-
-  <section id="experience" data-aos="fade-up">
-    <h2>Experiences</h2>
-    <ul>
-      <li><strong>Postdoctoral Researcher</strong>, SMSS Lab, IIT Kanpur (Sept. 2024–Present)<br>Working on AI for engineering design, including inverse design and intelligent actuators.</li>
-      <li><strong>Lead AI Scientist (Remote, Partly)</strong>, Avermass GmbH, German startup (June 2022–May 2023)<br>Led ML/DL research team for on forgery detection, synthetic data generation, and Document AI.</li>
-      <li><strong>Assistant Professor</strong>, IIMT College of Engineering, Greater Noida (July 2011–July 2013)<br>Taught core subjects in Electrical and Instrumentation Engineering.</li>
-      <li><strong>Assistant Professor</strong>, AKGEC, Ghaziabad (July 2013–Nov. 2017)<br>Taught core subjects in Electrical and Electronic Engineering. Led student projects on AI, ML applications, and lab development.</li>
-      <li><strong>Teaching Assistant</strong>, IIT Kanpur (During PhD)<br>Involved in teaching Control Systems, Electrical Machines, AI/ML, and related labs.</li>
-    </ul>
-    <h3>Total: Inds. startup = 01 year, Teaching = 6.5 year, Post-Doc = 08 months</h2>
-    <h2>Subjects Taught</h3>
-    <ul>
-      <li>Control Systems & Applications</li>
-      <li>Electrical Machines & Power Systems</li>
-      <li>Measurement & Instrumentation</li>
-      <li>Artificial Intelligence and Machine Learning</li>
-      <li>Sensor and Transducer Systems</li>
-      <li>LabVIEW-based Instrumentation</li>
-    </ul>
-  </section>
-
-  <section id="timeline" data-aos="fade-up">
-    <h2>Timeline</h2>
-    <div class="timeline">
-      <div class="event">
-        <h4>Sept. 2024–Present</h4>
-        <p>Post-Doctoral Researcher at SMSS Lab, Indian Institute of Technology, Knapur, UP, India.</p>
-      </div>
-      <div class="event">
-        <h4>Jan. 2018–Aug. 2024</h4>
-        <p>Ph.D. in Electrical Engineering, Indian Institute of Technology, Knapur, UP, India.</p>
-      </div>
-      <div class="event">
-        <h4>July 2013-Nov. 2017</h4>
-        <p>Assistant Professor, AKGEC, Ghaziabad, India.</p>
-      </div>
-      <div class="event">
-        <h4>July 2011-July 2013</h4>
-        <p>Assistant Professor, IIMT College of Engineering, Greater Noida, India.</p>
-      </div>
-      <div class="event">
-        <h4>July 2009-June 2011</h4>
-        <p>Master of Tehcnology, Indian Institute of Technology Kharagpur, Best Bengal, India.</p>
-      </div>
-      <div class="event">
-        <h4>July 2005-June 2009</h4>
-        <p>Bachelor of Technology, BIT Sindri, Jharkhand, India.</p>
-    </div>
-  </section>
-
-  <section id="contact" data-aos="fade-up">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:arunshr.iitk@gmail.com">arunshr.iitk@gmail.com</a></p>
-    <p>Phone: +91 84700 35605</p>
-    <p>GitHub: <a href="https://github.com/arnksh" target="_blank">@arnksh</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/arun-sharma-3684b112a" target="_blank">Arun Sharma</a></p>
-    <p>ORCID: <a href="https://orcid.org/0000-0003-2270-4714" target="_blank">0000-0003-2270-4714</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Dr. Arun Kumar Sharma. All rights reserved.</p>
-  </footer>
-
+      <footer class="footer">
+        <p>© 2025 Dr. Arun Kumar Sharma. All rights reserved.</p>
+      </footer>
+    </main>
+  </div>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
@@ -215,5 +196,3 @@
   </script>
 </body>
 </html>
-
-
