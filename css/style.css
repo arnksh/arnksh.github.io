@@ -81,14 +81,13 @@ header nav a {
 /* Page Layout */
 .page-body {
   display: flex;
-  max-width: flex;
+  max-width: 100%;
   margin-top: 30px;
 }
 .sidebar {
   justify-content: start;
   position: fixed;
   top: 70px;
-  left: 0 a;
   width: 300px;
   height: 100vh;
   padding: 20px;
@@ -138,7 +137,7 @@ header nav a {
 /* About Section */
 .about {
   padding: 10px 0;
-  max-width: flex;
+  max-width: 100%;
   margin: 0 auto;
   font-size: 17px;
   text-align: justify;
@@ -162,7 +161,7 @@ header nav a {
 /* Research Highlights */
 .highlights {
   display: flex;
-  max-width: flex;
+  max-width: 100%;
   flex-wrap: wrap;
   margin: 20px;
   justify-content: space-between;
@@ -233,7 +232,7 @@ header nav a {
 
 /* ===== Main Body Common Styling ===== */
 .main-content {
-  max-width: flex;
+  max-width: 100%;
   margin-top: 10px;
   padding: 1rem;
   flex: 1;
@@ -291,7 +290,7 @@ html {
 /* Ensure consistent formatting for all section elements */
 section {
   margin: 3em auto;
-  max-width: flex;
+  max-width: 100%;
   padding: 0 1.5em;
   padding-left: 30px;
   padding-right: 30px;
@@ -465,37 +464,25 @@ a:hover {
     border-right: none;
     border-bottom: 1px solid #ccc;
     padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 15px;
-    text-align: left;
+    display: block;
   }
 
-  .sidebar img {
-    width: 80px;
-    height: 80px;
-    align-items: left;
-  }
-  .sidebar h2 {
-    font-size: 1.5em;
-    margin-bottom: 5px;
-  }
-  .sidebar p {
-    font-size: 0.8em;
-    margin-bottom: 5px;
-  }
-
-  .page-body {
+  .main-content {
     margin-left: 0;
-    padding: 20px;
+    padding: 1rem;
+    margin-top: 0;
   }
 
-  .nav-menu
-  {
+  .nav-menu {
     display: none;
+    flex-direction: column;
+    background-color: #003366;
+    padding: 10px;
   }
-  /* Navigation bar responsiveness */
+  .nav-menu.show {
+    display: flex;
+  }
+  
   .nav-menu ul {
     display: none;
     flex-direction: column;
