@@ -31,7 +31,6 @@ body {
   padding: 0 2rem; /* Optional padding on left and right */
 }
 .site-name {
-  font-size: 1.2em;
   align-items: left;
   align-content: start;
   font-weight: bold;
@@ -78,8 +77,9 @@ header nav a {
 /* Page Layout */
 .page-body {
   display: flex;
-  max-width: 100%;
-  margin-top: 30px;
+  flex-direction: column; /* stack sidebar on top by default */
+  gap: 20px;
+  padding: 20px;
 }
 .sidebar {
   justify-content: start;
@@ -449,6 +449,13 @@ a:hover {
     margin-left: auto;
     align-self: center flex-end;
   }
+
+  .site-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    flex-shrink: 1;
+  }
   /* Stack layout vertically on mobile */
   .container {
     display: flex;
@@ -474,7 +481,18 @@ a:hover {
   }
 
   .page-body {
-    display: block;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .profile-flex {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .profile-details {
+    flex: 1;
   }
 
   .nav-menu {
@@ -495,4 +513,13 @@ a:hover {
     padding: 8px 0;
     color: white;
   }
+}
+
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row; /* Ensure it's horizontal always */
+  width: 100%;
 }
