@@ -14,7 +14,7 @@
     <div class="container header-flex">
       <div class="site-name">Dr. Arun Kumar Sharma</div>
       <div class="hamburger" onclick="toggleMenu()">☰</div>
-      <nav class="nav-menu" id="navbar-links">
+      <nav class="nav-menu" id="nav-menu">
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
@@ -233,31 +233,38 @@
         });
     }
   </script>
-  <script>
-    function toggleMenu() {
-      const nav = document.getElementById("navbar-links");
-      nav.classList.toggle("show");
-  
-      // Close menu on outside click
-      document.addEventListener("click", function handleOutsideClick(e) {
-        const hamburger = document.getElementById("hamburger");
-        const nav = document.getElementById("navbar-links");
-  
-        const clickedOutside = !nav.contains(e.target) && !hamburger.contains(e.target);
-  
-        if (clickedOutside) {
-          nav.classList.remove("show");
-          document.removeEventListener("click", handleOutsideClick);
-        }
-      });
+ <script>
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("nav-menu");
+
+  function toggleMenu() {
+    navMenu.classList.toggle("show");
+
+    // If menu is now open, attach outside click listener
+    if (navMenu.classList.contains("show")) {
+      document.addEventListener("click", closeOnOutsideClick);
+    } else {
+      document.removeEventListener("click", closeOnOutsideClick);
     }
-  
-    // Close menu when any nav link is clicked
-    document.querySelectorAll("#navbar-links a").forEach(link => {
-      link.addEventListener("click", () => {
-        document.getElementById("navbar-links").classList.remove("show");
-      });
+  }
+
+  function closeOnOutsideClick(e) {
+    if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+      navMenu.classList.remove("show");
+      document.removeEventListener("click", closeOnOutsideClick);
+    }
+  }
+
+  // Also hide menu when clicking a nav item
+  document.querySelectorAll("#nav-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("show");
+      document.removeEventListener("click", closeOnOutsideClick);
     });
-  </script>
+  });
+
+  hamburger.addEventListener("click", toggleMenu);
+</script>
+
 </body>
 </html>

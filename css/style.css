@@ -62,8 +62,6 @@ header {
     padding: 1em 0;
 }
 
-
-
 header h1 {
     font-size: 36px;
     margin: 0;
@@ -77,6 +75,11 @@ header nav a {
     font-size: 18px; /* Increased font size for header items */
 }
 
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* Page Layout */
 .page-body {
