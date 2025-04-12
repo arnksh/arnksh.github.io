@@ -163,17 +163,17 @@ header nav a {
 /* Research Highlights */
 .highlights {
   display: flex;
-  max-width: 1100px;
+  max-width: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 20px;
   justify-content: space-between;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   margin-top: 1rem;
   margin-bottom: 10px;
 }
 .highlight-card {
-  flex: 1 1 calc(25% - 1rem); /* 4 tiles per row max */
+  flex: 1 1 calc(20% - 1rem); /* 4 tiles per row max */
   min-width: 100px;
   max-width: 100%;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
@@ -287,8 +287,13 @@ html {
   scroll-padding-top: 100px; /* Adjust based on your fixed nav height */
 }
 
+
+
 /* Ensure consistent formatting for all section elements */
 section {
+  margin: 3em auto;
+  max-width: flex;
+  padding: 0 1.5em;
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 40px;
@@ -349,22 +354,6 @@ body {
   line-height: 1.6;
 }
 
-
-/* General Sections */
-section {
-  max-width: 1100px;
-  margin: 3em auto;
-  padding: 0 1.5em;
-}
-
-h2 {
-  color: #003366;
-  margin-bottom: 0.5em;
-}
-
-ul {
-  padding-left: 1.5em;
-}
 
 /* Profile Section Layout */
 .container.profile {
