@@ -211,6 +211,16 @@ header nav a {
   border-left: 5px solid #003366;
   background: #f9f9f9;
   max-width: 400px;
+  overflow-x: auto;
+  white-space: pre-wrap;  /* <--- wraps long lines */
+  word-wrap: break-word;  /* <--- ensures long words wrap too */
+  box-sizing: border-box;
+}
+
+.abstract-viewer pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto;
 }
 
 .abstract-viewer h3 {
