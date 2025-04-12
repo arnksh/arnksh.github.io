@@ -447,7 +447,7 @@ a:hover {
     cursor: pointer;
     color: white;
     margin-left: auto;
-    align-items: flex-end;
+    align-self: center flex-end;
   }
   /* Stack layout vertically on mobile */
   .container {
