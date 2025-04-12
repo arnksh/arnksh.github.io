@@ -76,7 +76,6 @@ header nav a {
 
 /* Page Layout */
 .page-body {
-  display: flex;
   flex-direction: column; /* stack sidebar on top by default */
   gap: 20px;
   padding: 20px;
@@ -481,7 +480,7 @@ a:hover {
   }
 
   .page-body {
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
   }
 
