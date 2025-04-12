@@ -213,12 +213,6 @@ header nav a {
   max-width: 400px;
 }
 
-.abstract-viewer pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  overflow-x: auto;
-}
-
 .abstract-viewer h3 {
   margin-top: 0;
   color: #003366;
