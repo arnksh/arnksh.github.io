@@ -235,9 +235,29 @@
   </script>
   <script>
     function toggleMenu() {
-      const menu = document.getElementById("navbar-links");
-      menu.classList.toggle("show");
+      const nav = document.getElementById("navbar-links");
+      nav.classList.toggle("show");
+  
+      // Close menu on outside click
+      document.addEventListener("click", function handleOutsideClick(e) {
+        const hamburger = document.getElementById("hamburger");
+        const nav = document.getElementById("navbar-links");
+  
+        const clickedOutside = !nav.contains(e.target) && !hamburger.contains(e.target);
+  
+        if (clickedOutside) {
+          nav.classList.remove("show");
+          document.removeEventListener("click", handleOutsideClick);
+        }
+      });
     }
+  
+    // Close menu when any nav link is clicked
+    document.querySelectorAll("#navbar-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        document.getElementById("navbar-links").classList.remove("show");
+      });
+    });
   </script>
 </body>
 </html>

@@ -439,9 +439,17 @@ a:hover {
   text-decoration: underline;
 }
 
+.hamburger {
+  display: none; /* Hide hamburger by default */
+}
+
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    margin-left: auto;
   }
   /* Stack layout vertically on mobile */
   .container {
@@ -484,5 +492,9 @@ a:hover {
 
   .nav-menu.show {
     display: flex;
+  }
+  .nav-menu a {
+    padding: 8px 0;
+    color: white;
   }
 }
