@@ -478,6 +478,7 @@ a:hover {
   margin-top: 2em;
   box-shadow: 0 0 8px rgba(0,0,0,0.05);
   margin: 20px auto;
+  max-width: 900px;
 }
 
 .abstract-box h3 {
