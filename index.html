@@ -14,7 +14,7 @@
     <div class="container header-flex">
       <div class="site-name">Dr. Arun Kumar Sharma</div>
       <div class="hamburger" onclick="toggleMenu()">☰</div>
-      <nav class="nav-menu">
+      <nav class="nav-menu" id="navbar-links">
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
@@ -235,7 +235,7 @@
   </script>
   <script>
     function toggleMenu() {
-      const menu = document.querySelector(".nav-menu");
+      const menu = document.getElementById("navbar-links");
       menu.classList.toggle("show");
     }
   </script>
