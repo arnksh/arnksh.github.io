@@ -439,14 +439,10 @@ a:hover {
   text-decoration: underline;
 }
 
-.hamburger {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: white;
-}
-
 @media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
   /* Stack layout vertically on mobile */
   .container {
     display: flex;
@@ -461,16 +457,18 @@ a:hover {
     position: relative;
     width: 100%;
     height: auto;
-    border-right: none;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 20px;
-    display: block;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: none;
+    text-align: center;
   }
 
   .main-content {
     margin-left: 0;
-    padding: 1rem;
-    margin-top: 0;
+  }
+
+  .page-body {
+    display: block;
   }
 
   .nav-menu {
@@ -478,35 +476,13 @@ a:hover {
     flex-direction: column;
     background-color: #003366;
     padding: 10px;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    z-index: 999;
   }
+
   .nav-menu.show {
     display: flex;
-  }
-  
-  .nav-menu ul {
-    display: none;
-    flex-direction: column;
-    background-color: #003366;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    width: 200px;
-    padding: 10px;
-    border-radius: 5px;
-  }
-
-  .nav-menu ul.show {
-    display: flex;
-  }
-
-  .nav-menu .menu-icon {
-    display: block;
-    cursor: pointer;
-    font-size: 26px;
-    color: white;
-  }
-
-  .nav-menu h1 {
-    font-size: 20px;
   }
 }
