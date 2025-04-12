@@ -13,6 +13,7 @@
   <header class="top-header">
     <div class="container header-flex">
       <div class="site-name">Dr. Arun Kumar Sharma</div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
       <nav class="nav-menu">
         <a href="#about">About</a>
         <a href="#research">Research</a>
@@ -230,6 +231,12 @@
         .catch(() => {
           content.textContent = "Failed to load abstract.";
         });
+    }
+  </script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("navbar-links");
+      menu.classList.toggle("show");
     }
   </script>
 </body>
