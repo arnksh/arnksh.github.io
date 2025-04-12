@@ -75,12 +75,6 @@ header nav a {
     font-size: 18px; /* Increased font size for header items */
 }
 
-.header-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 /* Page Layout */
 .page-body {
   display: flex;
