@@ -209,25 +209,26 @@ header nav a {
   display: none;
   align-self: center;
   border-left: 1px solid #003366;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem;
   background: #eae8b5;
   max-width: 90%;
   overflow-x: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
-  margin: 1rem auto;
-  padding: 1rem 1.5rem;
-  border-radius: 6px;
+  margin: 1rem;
+  padding: 1rem 1rem;
+  border-radius: 2px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .abstract-viewer pre {
-  margin: 0;
-  margin-top: 0px;
+  margin: auto;
+  margin-top: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
   font-family: inherit;
   font-size: 1em;
+  padding: 1rem;
 }
 
 .abstract-viewer h3 {
