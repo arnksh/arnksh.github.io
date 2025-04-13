@@ -208,6 +208,7 @@ header nav a {
 .abstract-viewer {
   align-self: center;
   border-left: 1px solid #003366;
+  padding: 1rem 1.5rem;
   background: #eae8b5;
   max-width: 90%;
   overflow-x: auto;
@@ -227,6 +228,14 @@ header nav a {
 .abstract-viewer h3 {
   margin-top: 0;
   color: #003366;
+}
+
+.abstract-viewer .abstract-heading {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1a1a1a;
 }
 
 .abstract-viewer a {
