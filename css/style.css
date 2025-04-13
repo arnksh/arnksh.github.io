@@ -212,6 +212,7 @@ header nav a {
   padding: 1rem 1rem;
   background: #eae8b5;
   max-width: 90%;
+  width: fit-content;
   overflow-x: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -222,8 +223,8 @@ header nav a {
 }
 
 .abstract-viewer pre {
-  margin: auto;
-  margin-top: auto;
+  margin: 0;
+  margin-top: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
   font-family: inherit;
