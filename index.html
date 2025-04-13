@@ -81,8 +81,8 @@
       </div>
 
       <div id="abstract-viewer" class="abstract-viewer" style="display:none;">
-        <div class="abstract-heading">Abstract</div>
-        <pre id="abstract-content">Loading...</pre>
+        <h3>Abstract</h3>
+        <pre id="abstract-viewer">Loading...</pre>
       </div>
 
       <!-- Research Section -->
@@ -223,7 +223,7 @@
   <script>
     function loadAbstract(fileName) {
       const viewer = document.getElementById("abstract-viewer");
-      const content = document.getElementById("abstract-content");
+      // const content = document.getElementById("abstract-content");
       viewer.style.display = "block";
       content.textContent = "Loading...";
 
