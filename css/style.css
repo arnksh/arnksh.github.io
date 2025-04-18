@@ -520,6 +520,37 @@ a:hover {
     padding: 8px 0;
     color: white;
   }
+
+
+  .abstract-viewer {
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: auto;
+    max-height: 80%;
+    overflow-y: auto;
+    z-index: 9999;
+    background: #fffde0;
+    border: 2px solid #003366;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: none;
+  }
+
+  .abstract-viewer-close {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    color: #003366;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-right: -10px;
+    margin-bottom: 10px;
+  }
+  
 }
 
 

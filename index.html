@@ -82,9 +82,10 @@
       </div>
 
       <div id="abstract-viewer" class="abstract-viewer" style="display:none;">
+        <div class="abstract-viewer-close" onclick="closeAbstract()">✖</div>
         <h3>Abstract</h3>
         <pre id="abstract-content">Loading...</pre>
-      </div>
+      </div>      
 
       <!-- Research Section -->
       <section id="research">
@@ -227,7 +228,10 @@
     function loadAbstract(fileName) {
       const viewer = document.getElementById("abstract-viewer");
       const content = document.getElementById("abstract-content");
-      viewer.style.display = "block";
+      const isMobile = window.innerWidth <= 768;
+
+      // Ensure it's shown either way
+      viewer.style.display = isMobile ? "block" : "block";
       content.textContent = "Loading...";
 
       fetch(`assets/abstracts/${fileName}`)
@@ -269,6 +273,10 @@
   // Attach listeners
   hamburger.addEventListener("click", toggleMenu);
   document.addEventListener("click", handleOutsideClick);
+
+  function closeAbstract() {
+  document.getElementById("abstract-viewer").style.display = "none";
+}
 </script>
 </body>
 </html>
