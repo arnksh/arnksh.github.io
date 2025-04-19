@@ -627,11 +627,10 @@ a:hover {
 /* Specific styles */
 .g-scholar {
   background-color: #f1f1f1;
-  border: 2px solid #003366;
+  color: #6018f0;
 }
 
 .id-orcid {
   background-color: #e2f2e9;
-  border: 2px solid #28a745;
   color: #28a745;
 }
