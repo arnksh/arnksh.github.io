@@ -550,7 +550,7 @@ a:hover {
     margin-right: -10px;
     margin-bottom: 10px;
   }
-  
+
 }
 
 
@@ -560,4 +560,44 @@ a:hover {
   align-items: center;
   flex-direction: row; /* Ensure it's horizontal always */
   width: 100%;
+}
+
+
+/* === Responsive Contact Info (Mobile Icons) === */
+.contact-icons {
+  display: none;
+  justify-content: center;
+  gap: 12px;
+  margin: 10px auto;
+  padding-top: 10px;
+}
+
+.contact-icons a {
+  color: #003366;
+  font-size: 1.4em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #007bff;
+}
+
+/* Device-specific visibility control */
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-only {
+    display: flex !important;
+  }
 }
