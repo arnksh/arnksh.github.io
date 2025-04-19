@@ -601,3 +601,12 @@ a:hover {
     display: flex !important;
   }
 }
+
+.ai {
+  font-family: 'Academicons';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
