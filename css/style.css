@@ -299,6 +299,13 @@ html {
   scroll-padding-top: 100px; /* Adjust based on your fixed nav height */
 }
 
+.highlighted-paragraph {
+  background-color: #f2ebd2; /* light yellow */
+  padding: 6px;
+  border-radius: 4px;
+  margin-top: 2px;
+}
+
 
 
 /* Ensure consistent formatting for all section elements */
