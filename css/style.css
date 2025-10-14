@@ -90,9 +90,6 @@ header nav a {
   overflow-y: auto; 
   border-right: 1px solid #ddd;
   text-align: center;
-  overflow-y: auto; /* Enables vertical scrolling */
-  overflow-x: hidden; /* Prevent horizontal scroll */
-  scroll-behavior: smooth;
 }
 
 .profile-img {
